@@ -1,0 +1,22 @@
+# DevOps Git Demo
+
+Short description: sample repo for learning Git + GitHub best practices (branches, PRs, tags).
+
+## Branch strategy
+- `main` — protected, production-ready
+- `dev` — integration
+- `feature/*` — short-lived feature branches
+
+## How to use
+1. Clone repo: `git clone <repo-url>`
+2. Create feature branch: `git checkout -b feature/<name> dev`
+3. Make changes, commit, push: `git push -u origin feature/<name>`
+4. Open PR: feature → dev. After review and merge, delete branch.
+5. When dev is stable, open PR: dev → main (release).
+
+## Contribution
+Follow Conventional Commits: `feat:`, `fix:`, `chore:`, `docs:`, `test:`
+
+## License
+Add your license here.
+
